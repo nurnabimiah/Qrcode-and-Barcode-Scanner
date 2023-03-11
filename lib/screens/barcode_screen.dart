@@ -42,7 +42,7 @@ class _BarcodeScreenState extends State<BarcodeScreen> {
           Expanded(
             flex: 1,
             child: Center(
-              child: loading
+              child: loading == true
                   ? const CircularProgressIndicator()
                   : result != null
                       ? Text(
